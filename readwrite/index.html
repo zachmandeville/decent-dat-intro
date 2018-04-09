@@ -18,7 +18,11 @@
             <button onclick="save()" id="save-btn">save</button>
 	    <!-- Similar to the enter(event) above.  When the save button is pressed, it runs the
        save function.  -->
-            <input onkeydown="enter(event)" id="font-input" placeholder="SpaceMono">
+            <select onkeydown="enter(event)" id="font-input" placeholder="Pick from Dropdown">
+	      <option value="SpaceMono">Choose a font</option>
+	      <option value="SpaceMono">SpaceMono</option>
+	      <option value="HankenLight">HankenLight</option>
+	    </select>
             <div></div>
             <button onclick="saveFont()" id="font-btn">save</button>
             <input onkeydown="enter(event)" id="dat-input" placeholder="dat:// to read">

@@ -42,12 +42,19 @@ body {
   grid-area: fsave;
 }
 
-#color-input, #save-btn, #font-btn, #fetch-btn, #dat-input, #font-input{
+select {
+  margin-top: 7px;
+  margin-right: 10px;
+  appearance: none;
+  height: 30px;
+  border-radius: 0px;
+}
+#color-input,  #save-btn, #font-btn, #fetch-btn, #dat-input, #font-input{
     margin-top: 7px;
     margin-right: 10px;
 }
 
-#color-input, #dat-input, #font-input  {
+#color-input, option, #dat-input, #font-input  {
     padding: 7px;
     width: 320px;
     margin-right: -7px;
