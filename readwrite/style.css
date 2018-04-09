@@ -2,8 +2,14 @@
     font-family: "SpaceMono";
     src: url("/SpaceMono-Regular.ttf");
 }
+
+@font-face {
+    font-family: "HankenLight";
+    src: url("/Hanken-Light.ttf");
+}
+
 body {
-    font-family: "SpaceMono", monospace;
+    font-family: "HankenLight", monospace;
     background-color: "#f2f2f2";
 }
 
@@ -12,9 +18,11 @@ body {
     margin-top: 80px;
     grid-template-columns: 155px 325px 60px 1fr;
     grid-template-rows: auto;
+    grid-row-gap: 1em;
     grid-template-areas: 
     ". title title ."
     ". color save  ."
+    ". font  fsave  ."
     ". dat   fetch .";
 }
 
@@ -26,12 +34,20 @@ body {
     grid-area: color;
 }
 
-#color-input, #save-btn, #fetch-btn, #dat-input {
+#font-input {
+    grid-area: font;
+}
+
+#font-btn{
+  grid-area: fsave;
+}
+
+#color-input, #save-btn, #font-btn, #fetch-btn, #dat-input, #font-input{
     margin-top: 7px;
     margin-right: 10px;
 }
 
-#color-input, #dat-input {
+#color-input, #dat-input, #font-input  {
     padding: 7px;
     width: 320px;
     margin-right: -7px;
